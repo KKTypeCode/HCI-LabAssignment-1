@@ -5,34 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dish 3</title>
 </head>
-<style>
-    li {
-        color: blue;
-        text-align: center;
+<style> 
+    body {
+        margin: auto;
+        background-color: lightsalmon;
     }
-    h2 {
+    .orr {
+        background-color: beige;
+        overflow: hidden;   
+    } 
+    .orr a {
+        float: left;
         text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
     }
-    img {
-        height: 200px;
-        border-radius: 8px;
-        width: 300px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .orr a:hover {
+        background-color: bisque;
     }
 </style>
 <body>
-    <a href="index.html">Home</a>
-    <h2>How to Make Rice</h2>
-    <ol>
-        <li>Wash your rice, rinse it at least 3 times or until the water runs clear using a container to hold the rice</li>
-        <li>Measure your rice and water inside the container by using the knuckle method or a water to rice ratio of 2:1</li>
-        <li>Cook your rice on high heat and bring the rice water to a boil</li>
-        <li>After boiling maintain a low heat simmer for the rice to cook</li>
-        <li>Cook until the water is absorbed by the rice roughly 15-20 minutes</li>
-        <li>Let the rice sit and covered for 10 minutes</li>
-    </ol>
-    <img src="rice.jpg">
+    <!--overflow is essential to for the nav bar to be in sync with the links-->
+    <div class="orr">
+        <a href="index.html">Home</a>
+        <a href="dish1.html">Sushi</a>
+        <a href="dish2.html">Onigiri</a>
+    </div>
+    <div class="Arr">
+        <h2>How to make Omurice</h2>
+    </div>
 </body>
 </html>
