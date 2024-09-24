@@ -15,6 +15,37 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .Arr {
+            background-color: darkslategray;
+            display: inline-block;
+        }
+        h1 {
+            color: azure;
+            font-weight: bold;
+        }
+        .desc {
+            padding: 15px;
+        }
+        .list {
+            padding: 15px;
+            background-color: burlywood;
+            display: inline-block;
+        }
+        .list a {
+            font-size: 25px;
+            color: antiquewhite;
+            text-decoration: none;
+        }
+        .info {
+            float: left;
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+        .image {
+            float: right;
+        }
+    </style>
 </head>
 <body>
     <div class="dadish">
@@ -22,25 +53,36 @@
             <h1>Shoku Side</h1>
         </div>
         <div class="desc">
-            <h6>Shoku Side is a Japenese street food stall located in the heart of Yorksville.<br>
+            <h4>Shoku Side is a Japenese street food stall located in the heart of Yorksville.<br>
                 We serve simple, yet savoury delicacies for every Japanese food enthusiast.<br>
                 You can come give us a visit at our location or take a glimpse at a small list<br>
                 of meals and appetisers we serve from our kitchen!
-            </h6>
+            </h4>
         </div>
+        <dl class="list">
+            <dt><a href="dish1.html">Sushi</a></dt>
+            <dt><a href="dish2.html">Onigiri</a></dt>
+            <dt><a href="dish3.html">Omurice</a></dt>
+        </dl>
     </div>
     <footer class="bottom">
-        <div class="contact">
-            <h5>Our contacts:</h5>
-            <h3>Phone number: +1-814-4956-7283</h3>
-            <h3>Location: St. Rose Rd, Yorksville</h3>
+        <div class="info">
+            <div class="contact">
+                <h5>Our contacts:</h5>
+                <h3>Phone number: +1-814-4956-7283</h3>
+                <h3>Location: St. Rose Rd, Yorksville</h3>
+            </div>
+            <div class="socials">
+                <h5>Find us elsewhere:</h5>
+                <dl>
+                    <dt><a href="https://www.instagram.com/">Instagram</a></dt>
+                    <dt><a href="https://x.com/">Twitter/X</a></dt>
+                </dl>
+            </div>
         </div>
-        <div class="socials">
-            <h5>Find us elsewhere:</h5>
-            <dl>
-                <dt><a href="https://www.instagram.com/">Instagram</a></dt>
-                <dt><a href="https://x.com/">Twitter/X</a></dt>
-            </dl>
+        <div class="image">
+            <img src="Food Stall.jpg" alt="Our food stall"
+             height="220px">
         </div>
     </footer>
 </body>
