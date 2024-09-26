@@ -38,11 +38,14 @@ body {
 }
 .Arr {
     padding: 15px;
+    margin-bottom: 200px;
 }
 .bottom {
     background-color: blanchedalmond;
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
 }
 .socials a {
