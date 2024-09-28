@@ -38,7 +38,7 @@ body {
 }
 .Arr {
     padding: 15px;
-    margin-bottom: 200px;
+    margin-bottom: 210px;
 }
 .bottom {
     background-color: blanchedalmond;
@@ -47,6 +47,11 @@ body {
     left: 0;
     right: 0;
     width: 100%;
+}
+.info {
+    float: left;
+    padding-left: 15px;
+    padding-top: 10px;
 }
 .socials a {
     color: hsl(189, 100%, 50%);
