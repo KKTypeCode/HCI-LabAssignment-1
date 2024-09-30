@@ -16,37 +16,81 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <style>
+        /*to center content, this is the parent tag*/
+        .top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*this is the child tag*/
         .main {
-            background-color: darkslategray;
+            background-color: #d24235;
             display: inline-block;
+            justify-content: center;
             padding: 15px;
         }
         h1 {
             color: azure;
             font-weight: bold;
+            font-size: 80px;
+            font-family: 'Times New Roman', Times, serif;
         }
         .Arr {
             margin-bottom: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         .list {
             padding: 15px;
-            background-color: burlywood;
             display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .list a {
-            font-size: 25px;
-            color: antiquewhite;
             text-decoration: none;
         }
         .image {
             float: right;
         }
+        /*from here...*/
+        .choice {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+        }
+        input[type=radio]+label {
+            font-weight: bold;
+        }
+        input[type=radio]:checked+label {
+            font-weight: bolder;
+        }
+        input[type=radio]:focus+label {
+            border: 1px dotted #000;
+        }
+        /*until here, is for removing the circle buttons from radio, but its still incomplete.*/
+        .list td {
+            display: inline-block;
+            font-size: 25px;
+            background-color: burlywood;
+            color: antiquewhite;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
-    <div class="dadish">
-        <div class="main">
-            <h1>Shoku Side</h1>
+    <section class="dadish">
+        <div class="top">
+            <div class="main">
+                <h1>Shoku Side</h1>
+            </div>
         </div>
         <div class="Arr">
             <h4>Shoku Side is a Japenese street food stall located in the heart of Yorksville.<br>
@@ -55,31 +99,22 @@
                 of meals and appetisers we serve from our kitchen!
             </h4>
         </div>
-        <dl class="list">
-            <dt><a href="dish1.html">Sushi</a></dt>
-            <dt><a href="dish2.html">Onigiri</a></dt>
-            <dt><a href="dish3.html">Omurice</a></dt>
-        </dl>
-    </div>
-    <footer class="bottom">
-        <div class="info">
-            <div class="contact">
-                <h5>Our contacts:</h5>
-                <h3>Phone number: +1-814-4956-7283</h3>
-                <h3>Location: St. Rose Rd, Yorksville</h3>
-            </div>
-            <div class="socials">
-                <h5>Find us elsewhere:</h5>
-                <dl>
-                    <dt><a href="https://www.instagram.com/">Instagram</a></dt>
-                    <dt><a href="https://x.com/">Twitter/X</a></dt>
-                </dl>
-            </div>
-        </div>
-        <div class="image">
-            <img src="Food Stall.jpg" alt="Our food stall"
-             height="220px">
-        </div>
-    </footer>
+        <table class="list" border="0">
+            <tr>
+                <td class="spot">
+                    <input type="radio" id="Sushi" class="choice">
+                    <label class="foodname" for="Sushi">Sushi</label>
+                </td>
+                <td class="spot">
+                    <input type="radio" id="Onigiri" class="choice">
+                    <label class="foodname" for="Onigiri">Onigiri</label>
+                </td>
+                <td class="spot">
+                    <input type="radio" id="Omurice" name="choice">
+                    <label class="foodname" for="Omurice">Omurice</label>
+                </td>
+            </tr>
+        </table>
+    </section>
 </body>
 </html>

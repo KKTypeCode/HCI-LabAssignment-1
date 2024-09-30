@@ -1,10 +1,12 @@
 /*body and navbar was ryan's css, but i standardised it, js fyi*/
 body {
+    /*background-color: #e4a15e;*/
     margin: auto;
-    background-color: lightsalmon;
+    z-index: 2;
 }
 .navbar {
     background-color: beige;
+    z-index: 3;
     overflow: hidden;
     /*overflow is essential to for the nav bar to be in sync with the links*/
 } 
@@ -39,15 +41,12 @@ body {
 }
 .Arr {
     padding: 15px;
-    margin-bottom: 210px;
+    float: center;
 }
 .bottom {
     background-color: blanchedalmond;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 100%;
+    z-index: -1;
 }
 .info {
     float: left;
