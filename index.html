@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoku Side</title>
-    <link rel="icon" href="icon logo 2.png">
+    <link rel="icon" href="icon_logo_2.png">
     <!--Bootstrap CSS-->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -15,8 +15,11 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script href="script.js"></script>
     <style>
+        body {
+            background-image: url(Ramen\ wallpage.jpg);
+            background-size:cover;
+        }
         /*to center content, this is the parent tag*/
         .top {
             display: flex;
@@ -25,10 +28,14 @@
         }
         /*this is the child tag*/
         .main {
-            display: inline-block;
-            justify-content: center;
-            align-items: center;
+            display: block;
             padding: 15px;
+            background-color: #c80000;
+            border-left: 5px solid rgb(81, 23, 23);
+            border-bottom: 5px solid rgb(81, 23, 23);
+            border-right: 1px solid rgb(81, 23, 23);
+            border-top: 1px solid rgb(81, 23, 23);
+            border-radius: 10px;
         }
         h1 {
             color: #fec95d;
@@ -38,49 +45,72 @@
         }
         .Arr {
             margin-bottom: 0px;
-            display: flex;
+            display: block;
             justify-content: center;
             align-items: center;
             text-align: left;
             width: 80%;
             margin-left: auto;
             margin-right: auto;
-            border-left: #ffffff;
-            border-right: #ffffff;
+            border-collapse: collapse;
+            border-color: black;
+            border-top: 1px solid;
+            border-right: 1px solid;
+            border-radius: 15px;
+            background-color: white;
         }
         h4 {
             padding-right: 60px;
         }
-        .list {
-            float: center;
-            background-color: #395d4b;
-            padding: 15px;
+        .menutitle {
+            display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 32px;
+            padding-top: 32px;
+        }
+        .menutitle td {
+            display: block;
+            background-color: #335243;
+            padding: 15px;
+            border-bottom: 5px solid #273e33;
+            border-left: 5px solid #273e33;
+            border-top: 1px solid #273e33;
+            border-right: 1px solid #273e33;
+            border-radius: 15px;
+        }
+        h2 {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 70px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .list {
+            float: center;
+            display: block;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            width: 60%;
             border-radius: 10px;
+            border-bottom: 5px solid #d1ac7d;
+            border-left: 5px solid #d1ac7d;
+            border-top: 1px solid #d1ac7d;
+            border-right: 1px solid #d1ac7d;
+            background-color: #ebd1ae;
         }
-        .list a {
+        .trborder {
+            padding-bottom: 30px;
+        }
+        td a {
             text-decoration: none;
-        }
-        /*from here...*/
-        .choice {
-            position: absolute;
-            opacity: 0;
-            width: 0;
-        }
-        input[type=radio]+label {
+            color: #d1ac7d;
             font-weight: bold;
         }
-        input[type=radio]:checked+label {
-            font-weight: bolder;
+        td a:hover {
+            color: #fff5e8;
+            font-weight: bold;
         }
-        input[type=radio]:focus+label {
-            color: #e8e174;
-        }
-        /*until here, is for removing the circle buttons from radio, but its still incomplete.*/
         .list td {
             font-size: 25px;
             color: white;
@@ -89,13 +119,11 @@
             padding-top: 25px;
             padding-bottom: 25px;
         }
-        .restoname {
+        body img {
             border-radius: 10px;
-            background-color: #c80000;
         }
-        .dispinfo {
-            border-radius: 25px;
-            background-color: #27719f;
+        .tableimg {
+            height: 200px;
         }
     </style>
 </head>
@@ -108,7 +136,7 @@
                 </tr>
             </table>
             <div class="logo">
-                <img src="icon logo 2.png" alt="Logo">
+                <img src="icon_logo_2.png" alt="Logo">
             </div>
         </div>
         <table class="Arr" border="5">
@@ -120,29 +148,31 @@
                         of meals and appetisers we serve from our kitchen!
                     </h4>
                 </td>
-                <td>
+                <td class="mainimg">
                     <img src="Food Stall 2.jpg" alt="Our Location" width="400px">
                 </td>
             </tr>
         </table>
+        <table class="menutitle">
+            <tr><td><h2>What We Serve</h2></td></tr>
+        </table>
         <table class="list">
-            <tr>
-                <td class="spot">
-                    <input type="radio" id="Sushi" class="choice" onclick="sushichoice()">
-                    <label class="foodname" for="Sushi">Sushi</label>
-                </td>
-                <td class="spot">
-                    <input type="radio" id="Onigiri" class="choice" onclick="onigirichoice()">
-                    <label class="foodname" for="Onigiri">Onigiri</label>
-                </td>
-                <td class="spot">
-                    <input type="radio" id="Omurice" class="choice" onclick="omuricechoice()">
-                    <label class="foodname" for="Omurice">Omurice</label>
-                </td>
+            <tr class="trborder">
+                <td class="tdspace" width="30%"><img src="hosomaki box.jpeg" alt="Sushi" class="tableimg"></td>
+                <td class="tdspace"><a href="dish1.html">SUSHI</a> | Description of a sushi</td>
             </tr>
         </table>
-        <table id="dispinfo">
-            <div id="display"></div>
+        <table  class="list">
+            <tr class="trborder">
+                <td class="tdspace"><a href="dish2.html">ONIGIRI</a> | Description of a onigiri</td>
+                <td class="tdspace" width="30%"><img src="onigiri-fillings-popular.jpg" alt="Onigiri" class="tableimg"></td>
+            </tr>
+        </table>
+        <table  class="list">
+            <tr class="trborder">
+                <td class="tdspace" width="30%"><img src="omurice box.jpg" alt="Omurice" class="tableimg"></td>
+                <td class="tdspace"><a href="dish3.html">OMURICE</a> | Description of a omurice</td>
+            </tr>
         </table>
     </section>
 </body>
