@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-image: url(Ramen\ wallpage.jpg);
-            background-size:cover;
+            background-image: url(backgorundjapan.jpg);
+            background-size:auto;
         }
         /*to center content, this is the parent tag*/
         .top {
@@ -26,15 +26,18 @@
             justify-content: center;
             align-items: center;
         }
+        .vertical-rl{
+            writing-mode: vertical-lr;
+        }
         /*this is the child tag*/
         .main {
             display: block;
             padding: 15px;
             background-color: #c80000;
-            border-left: 5px solid rgb(81, 23, 23);
-            border-bottom: 5px solid rgb(81, 23, 23);
-            border-right: 1px solid rgb(81, 23, 23);
-            border-top: 1px solid rgb(81, 23, 23);
+            border-left: 5px solid rgb(0, 0, 0);
+            border-bottom: 5px solid rgb(0, 0, 0);
+            border-right: 1px solid rgb(0, 0, 0);
+            border-top: 1px solid rgb(0, 0, 0);
             border-radius: 10px;
         }
         h1 {
@@ -53,11 +56,11 @@
             margin-left: auto;
             margin-right: auto;
             border-collapse: collapse;
-            border-color: black;
-            border-top: 1px solid;
-            border-right: 1px solid;
+            border-color: #ffdfdf;
+            border-top: 1px;
+            border-right: 1px;
             border-radius: 15px;
-            background-color: white;
+            background-color: #ded1d1;
         }
         h4 {
             padding-right: 60px;
@@ -70,12 +73,12 @@
         }
         .menutitle td {
             display: block;
-            background-color: #335243;
+            background-color: #e30f0f;
             padding: 15px;
-            border-bottom: 5px solid #273e33;
-            border-left: 5px solid #273e33;
-            border-top: 1px solid #273e33;
-            border-right: 1px solid #273e33;
+            border-bottom: 5px solid #000000;
+            border-left: 5px solid #000000;
+            border-top: 1px solid #000000;
+            border-right: 1px solid #000000;
             border-radius: 15px;
         }
         h2 {
@@ -93,11 +96,11 @@
             margin-bottom: 32px;
             width: 60%;
             border-radius: 10px;
-            border-bottom: 5px solid #d1ac7d;
-            border-left: 5px solid #d1ac7d;
-            border-top: 1px solid #d1ac7d;
-            border-right: 1px solid #d1ac7d;
-            background-color: #ebd1ae;
+            border-bottom: 5px solid #ffdfdf;
+            border-left: 5px solid #ffdfdf;
+            border-top: 1px solid #ffdfdf;
+            border-right: 1px solid #ffdfdf;
+            background-color: #ded1d1;
         }
         .trborder {
             padding-bottom: 30px;
@@ -124,6 +127,24 @@
         }
         .tableimg {
             height: 200px;
+        }
+        .foot{
+            display:block;
+            margin-top: 30px;
+            margin-left:auto;
+            margin-right:auto;
+            height: auto;
+            width: auto;
+            padding: 0;
+            border-style: none;
+            color:black;
+            text-align: center;
+            background-color: #ead0af;
+            background-blend-mode: overlay;
+        }
+        a:link {
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
@@ -158,22 +179,72 @@
         </table>
         <table class="list">
             <tr class="trborder">
-                <td class="tdspace" width="30%"><img src="hosomaki box.jpeg" alt="Sushi" class="tableimg"></td>
-                <td class="tdspace"><a href="dish1.html">SUSHI</a> | Description of a sushi</td>
+                <td class="tdspace" width="30%"><img src="how-to-draw-sushi-step-6.jpg" alt="Sushi" class="tableimg"></td>
+                <td class="tdspace"><a href="dish1_1.html" style="color:red">SUSHI</a> | Click on the "SUSHI" to know more</td>
             </tr>
         </table>
         <table  class="list">
             <tr class="trborder">
-                <td class="tdspace"><a href="dish2.html">ONIGIRI</a> | Description of a onigiri</td>
-                <td class="tdspace" width="30%"><img src="onigiri-fillings-popular.jpg" alt="Onigiri" class="tableimg"></td>
+                <td class="tdspace"><a href="dish2_2.html" style="color:red">ONIGIRI</a> | Click on the "ONIGIRI" to know more</td>
+                <td class="tdspace" width="25%"><img src="onigiri.jpg" alt="Onigiri" class="tableimg"></td>
             </tr>
         </table>
         <table  class="list">
             <tr class="trborder">
-                <td class="tdspace" width="30%"><img src="omurice box.jpg" alt="Omurice" class="tableimg"></td>
-                <td class="tdspace"><a href="dish3.html">OMURICE</a> | Description of a omurice</td>
+                <td class="tdspace" width="30%"><img src="images (1).jpg" alt="Omurice" class="tableimg"></td>
+                <td class="tdspace"><a href="dish3_3.html" style="color:red">OMURICE</a> | Click on the "OMURICE" to know more</td>
+            </tr>
+        </table>
+        <table class="foot">   
+            <tr>
+                <td>
+                    <h3 style="margin: 30px 20px 10px 60px; text-align: center;">Visit us📌</h3>
+                </td>
+                <td>
+                    <h3 style="margin: 30px 20px 10px 100px;">Customer Service📞</h3>
+                </td>
+                <td>
+                    <h3 style="margin: 30px 20px 10px 120px;">Who we are🏆</h3>
+                </td>
+                <td>
+                    <h3 style="margin: 30px 20px 10px 160px;">Come to Shoku Side🚨 </h3>
+                </td>
+            </tr>
+            <tr>
+                <td>    
+                    <a href="https://maps.google.com/maps">
+                        <p style="margin: 10px; font-size: larger; color: black;">Shoku Side @ Greater Jakarta</p>
+                    </a>
+                    <a href="https://maps.google.com/maps">
+                        <p style="margin: 10px; font-size: larger; color: black;">Shoku Side @ Bandung</p>
+                    </a>
+                    <a href="https://maps.google.com/maps" >
+                        <p style="margin: 10px; font-size: larger; color:black">Shoku Side @ Semarang</p>
+                    </a>
+                    <a href="https://maps.google.com/maps">
+                        <p style="margin:10px;font-size: larger;color: black;">Shoku Side @ Bali</p>
+                    </a>
+                </td>
+                <td>
+                    <p style="margin: 10px 10px 10px 50px;font-size: larger;color: black;">Refund Policy</p>
+                    <p style="margin: 10px 10px 10px 50px;font-size: larger;color: black;">Order Status</p>
+                    <p style="margin: 10px 10px 10px 50px;font-size: larger;color: black;">Privacy Policy</p>
+                    <p style="margin: 10px 10px 10px 50px;font-size: larger;color: black;">Terms & Conditions</p>
+                </td>
+                <td>
+                    <p style="margin: 10px 10px 10px 110px;font-size: larger;color: black;">About Us</p>
+                    <p style="margin: 10px 10px 10px 110px;font-size: larger;color: black;">Our Blog</p>
+                    <p style="margin: 10px 10px 10px 110px;font-size: larger;color: black;">FAQ</p>
+                    <p style="margin: 10px 10px 10px 110px;font-size: larger;color: black;">Contact Us</p>
+                </td>
+                <td>
+                    <p style="margin: 10px 10px 10px 160px;text-align: center;">We look forward to welcoming you</p>
+                    <p style="margin: 10px 10px 10px 160px;text-align: center;">and sharing this flavourful, and</p>
+                    <p style="margin: 10px 10px 10px 160px;text-align: center;">traditions of Japanese Cuisine with you!</p>
+                    <img src=""
+                </td>
             </tr>
         </table>
     </section>
-</body>
+</body> 
 </html>
