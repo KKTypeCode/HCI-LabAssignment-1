@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width:1300px;
+            margin: auto;
+        }
+        .contain {
+            margin-top: 10px;
+            margin-bottom: 4px;
+            display: grid;
+            grid-template-areas: 
+            'nav1 nav2'
+            'pic1 des1'
+            'body body'
+            'pic2 pic3'
+            'footer footer';
+            grid-template-columns: 650px 650px;
+            grid-template-rows: 50px 500px 250px 400px 100px;
+            row-gap: 0px;
+        }
+        .contain img {
+            margin: auto;
+            float: left;
+            height: 50px;
+        }
+        .nav {
+            float: right;
+            grid-area: nav1;
+            background-color: beige;
+            text-align: right;
+            border-radius: 10px 0px 0px 0px;
+            overflow: hidden;
+        }
+        .navbar {
+            font-family: 'Comic Sans MS', cursive;
+            grid-area: nav2;
+            background-color: beige;
+            text-align: right;
+            border-radius: 0px 10px 0px 0px;
+            overflow: hidden;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: auto;
+            display: block;
+            text-align: center;
+            float: right;
+        }
+        .navbar a:hover {
+            background-color: bisque;
+        }
+        .harr {
+            grid-area: pic1;
+            background-color: white
+        }
+        .harr img {
+            height: 400px;
+            padding: 30px;
+            border-radius: 15%;
+        }
+        .horr {
+            grid-area: des1;
+            background-color: white;
+        }
+        .horr h2{
+            font-size: 40px;
+            font-family: "Kanit", sans-serif;
+        }
+        .horr h6{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+        .ar {
+            grid-area: body;
+            background-color: white;
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+        }
+        .ar h6{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .or {
+            grid-area: pic2;
+            background-color: white
+        }
+        .or img {
+            height: 300px;
+            padding: 50px;
+            border-radius: 10%;
+        }
+        .urr {
+            grid-area: pic3;
+            background-color: white;
+        }        
+        .urr img {
+            height: 300px;
+            padding: 50px;
+            border-radius: 10%; 
+        }
+        .foot {
+            grid-area: footer;
+            border-radius: 0px 0px 10px 10px;
+            background-color: rgb(255, 225, 127);
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="nav">
+            <a href='#'><img src="icon_logo_2.png"></a>
+        </div>
+        <div class="navbar">
+            <a href="#">Dish3</a>
+            <a href="#">Dish2</a>
+            <a href="#">Dish1</a>
+            <a href='#'>Home</a>
+        </div>
+        <div class="harr">
+            <img src="sushi11">
+        </div>
+        <div class="horr">
+            <h2>Sushi</h2>
+            <h6>We serve different kinds of sushi rolls, starting with hosomaki rolls:
+            <h6>We also serve the traditional style of sushi, called nigiri:</h6>
+            <h6>We can serve sushi in different shapes too, like our oshizushi:</h6>
+            <h6>You can choose your own preference of fillings, from vegan options<br>
+            like cucumber and avocado, to meaty options, such as salmon and tuna!</h6>
+            <h6>What are you waiting for? Come get your choice of sushi today!</h6>
+        </div>
+        <div class="ar">
+            <h6>"Ramen" is a Japanese national dish. It's easy, cheap, delicious, and has a variety of personalities depending on the store. In recent years, the Tsukemen boom has been added, and there is no sign of decline. And now, a new page of history is added here. This is the final form of modern ramen culture Abura Soba
+            <br><br>
+            The noodles are 100% domestically produced Hokkaido wheat and 100% domestically produced Hokkaido extremely aged noodles!
+            <br><br>
+            The special sauce is a secret additive-free three-year soy sauce sauce!
+            <br>
+            Homemade chili oil is a hot topic! "Eat chili oil"!
+            <br>
+            The variation is infinite customization "I like it! I like it!"!
+            </h6>
+        </div>
+        <div class="or">
+            <img src="hosomaki.jpeg">
+        </div>
+        <div class="urr">
+            <img src="nigiri.jpeg">
+        </div>
+        <footer class="foot">
+            
+        </footer>
+    </div>
+</body>
+</html>
