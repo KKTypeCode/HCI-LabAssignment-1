@@ -1,4 +1,7 @@
 /*body and navbar was ryan's css, but i standardised it, js fyi*/
+html {
+    zoom: 90%;
+}
 body {
     /*background-color: #e4a15e;*/
     margin: auto;
