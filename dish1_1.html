@@ -24,9 +24,10 @@
             'body body'
             'pic2 pic3'
             'table1 table1'
+            'form form'
             'footer footer';
             grid-template-columns: 650px 650px;
-            grid-template-rows: 50px 500px 250px 400px 200px 100px;
+            grid-template-rows: 50px 500px 250px 400px 200px 400px 100px;
             row-gap: 0px;
         }
         .contain img {
@@ -64,7 +65,7 @@
         }
         .harr {
             grid-area: pic1;
-            background-color: white
+            background-color: #F0F0F0;
         }
         .harr img {
             margin: 30px;
@@ -74,7 +75,7 @@
         }
         .horr {
             grid-area: des1;
-            background-color: white;
+            background-color: #F0F0F0;
             padding-right: 20px;
             padding-left: 5px;
         }
@@ -87,7 +88,7 @@
         }
         .ar {
             grid-area: body;
-            background-color: white;
+            background-color: #F0F0F0;
             padding-top: 0px;
             padding-left: 30px;
             padding-right: 30px;
@@ -98,7 +99,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         .or {
-            background-color: white;
+            background-color: #F0F0F0;
             padding-left: 40px;
         }
         .or img {
@@ -108,7 +109,7 @@
             height: 300px;
         }
         .urr { 
-            background-color: white;
+            background-color: #F0F0F0;
         }        
         .urr img {
             margin: 30px;
@@ -118,7 +119,7 @@
         }
         .tab {
             grid-area: table1;
-            background-color: white;
+            background-color: #F0F0F0;
         }
         .tab table {
             text-align: center;
@@ -134,6 +135,21 @@
         }
         .tab td {
             border-bottom: 1px black solid;
+        }
+        .form {
+            grid-area: form;
+            background-color: #F0F0F0;
+            padding-left: 100px;
+        }
+        .form h6 {
+            font-size: 20px;
+        }
+        .form input {
+            width: 1000px;
+        }
+        .form textarea {
+            height: 100px;
+            width: 1000px;
         }
         .foot {
             grid-area: footer;
@@ -227,9 +243,44 @@
                 </tr>
             </table>
         </div>
+        <div class="form">
+            <h6>Form</h6>
+            <form>
+                <label>Feedback</label> 
+                <br>
+                <textarea type="text" id="Feedback">Please Give us Feedback</textarea>
+                <br>
+                <label>Email Address</label> 
+                <br>
+                <input type="email" id="Mail"> 
+                <br>
+                <label>Name</label> 
+                <br>
+                <input type="text" id="Name"> 
+                <br><br>
+                <button type="button" onclick="register()">Send</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
         <footer class="foot">
             
         </footer>
     </div>
+    <script>
+        function register() {
+            var Feedback = document.getElementById("Feedback").value;
+            var Mail = document.getElementById("Mail").value;
+            var Name = document.getElementById("Name").value;
+            if (Feedback == "" || Mail == "" || Name == "") {
+                alert("You must complete the form!")
+            }
+            else if (Mail.includes("@") == false) {
+                alert("Please use @ to enter a valid email address")
+            }
+            else {
+                alert("Data has been registered")
+            }
+        }
+    </script>
 </body>
 </html>
