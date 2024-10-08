@@ -23,9 +23,10 @@
             'pic1 des1'
             'body body'
             'pic2 pic3'
+            'table1 table1'
             'footer footer';
             grid-template-columns: 650px 650px;
-            grid-template-rows: 50px 500px 250px 400px 100px;
+            grid-template-rows: 50px 500px 250px 400px 200px 100px;
             row-gap: 0px;
         }
         .contain img {
@@ -115,6 +116,25 @@
             border-radius: 12px;
             height: 300px;
         }
+        .tab {
+            grid-area: table1;
+            background-color: white;
+        }
+        .tab table {
+            text-align: center;
+            border-collapse: collapse;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tab tr:nth-child(even) {
+            background-color: rgb(255, 153, 102);
+            border-right: 1px black solid;
+            border-left: 1px black solid;
+        }
+        .tab td {
+            border-bottom: 1px black solid;
+        }
         .foot {
             grid-area: footer;
             border-radius: 0px 0px 10px 10px;
@@ -166,6 +186,46 @@
         </div>
         <div class="urr">
             <img src="nigiri.jpeg">
+        </div>
+        <div class="tab">
+            <table>
+                <tr>
+                    <td>Dish Name</td>
+                    <td>Fish Type</td>
+                    <td>Origin</td>
+                    <td>Rating</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </table>
         </div>
         <footer class="foot">
             
