@@ -118,6 +118,7 @@
             height: 300px;
         }
         .tab {
+            display: flex;
             grid-area: table1;
             background-color: #F0F0F0;
         }
@@ -130,12 +131,16 @@
         }
         .tab tr:nth-child(even) {
             background-color: rgb(255, 153, 102);
+            /*
             border-right: 1px black solid;
             border-left: 1px black solid;
+            */
         }
+        /*
         .tab td {
             border-bottom: 1px black solid;
         }
+        */
         .form {
             grid-area: form;
             background-color: #F0F0F0;
@@ -241,14 +246,17 @@
                     <td>3</td>
                     <td>4</td>
                 </tr>
+                <tr>
+                    <td  colspan="4">Visit us to know more!</td>
+                </tr>
             </table>
         </div>
         <div class="form">
-            <h6>Form</h6>
+            <h6>Let us know what you think!</h6>
             <form>
                 <label>Feedback</label> 
                 <br>
-                <textarea type="text" id="Feedback">Please Give us Feedback</textarea>
+                <textarea type="text" id="Feedback" placeholder="Please give us your feedback..."></textarea>
                 <br>
                 <label>Email Address</label> 
                 <br>
@@ -268,17 +276,18 @@
     </div>
     <script>
         function register() {
-            var Feedback = document.getElementById("Feedback").value;
-            var Mail = document.getElementById("Mail").value;
-            var Name = document.getElementById("Name").value;
+            const Feedback = document.getElementById("Feedback").value
+            const Mail = document.getElementById("Mail").value
+            const Name = document.getElementById("Name").value
+            const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
             if (Feedback == "" || Mail == "" || Name == "") {
                 alert("You must complete the form!")
             }
-            else if (Mail.includes("@") == false) {
-                alert("Please use @ to enter a valid email address")
+            else if (regex.test(Mail) == false) {
+                alert("Please enter a valid email address")
             }
             else {
-                alert("Data has been registered")
+                alert("Data has been registered!\nThank you for your feedback!")
             }
         }
     </script>
