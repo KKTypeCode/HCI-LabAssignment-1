@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onigiri</title>
+    <link rel="icon" href="icon_logo_2.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <style>
         body {
-            width:1300px;
+            width: 1300px;
             margin: auto;
             background-image: url(vector-japanese-floral-background_f1Ce4m8__thumb.jpg);
         }
@@ -23,9 +24,11 @@
             'pic1 des1'
             'body body'
             'pic2 pic3'
+            'table1 table1'
+            'form form'
             'footer footer';
             grid-template-columns: 650px 650px;
-            grid-template-rows: 50px 500px 250px 400px 100px;
+            grid-template-rows: 50px 500px 250px 400px 200px 400px 100px;
             row-gap: 0px;
         }
         .contain img {
@@ -63,7 +66,7 @@
         }
         .harr {
             grid-area: pic1;
-            background-color: #F0F0F0
+            background-color: #F0F0F0;
         }
         .harr img {
             margin: 30px;
@@ -74,15 +77,15 @@
         .horr {
             grid-area: des1;
             background-color: #F0F0F0;
+            padding-right: 20px;
+            padding-left: 5px;
         }
         .horr h2{
             font-size: 80px;
         }
         .horr h6{
-            padding-right: 30px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 19px;
-            text-align: justify;
         }
         .ar {
             grid-area: body;
@@ -95,7 +98,6 @@
         .ar h6{
             font-size: 17px;
             font-family: Arial, Helvetica, sans-serif;
-
         }
         .or {
             background-color: #F0F0F0;
@@ -115,6 +117,48 @@
             border: 3px solid #e30f0f;  
             border-radius: 12px;
             height: 300px;
+        }
+        .tab {
+            display: flex;
+            grid-area: table1;
+            background-color: #F0F0F0;
+        }
+        .tab table {
+            text-align: center;
+            border-collapse: collapse;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tab tr:nth-child(even) {
+            background-color: rgb(255, 153, 102);
+        }
+        .tab td {
+            font-family: "Raleway";
+        }
+        .topic {
+            font-weight: bold;
+        }
+        .form {
+            grid-area: form;
+            background-color: #F0F0F0;
+            padding-left: 100px;
+        }
+        .formtitle {
+            padding-bottom: 100px;
+            font-size: 30px;
+            font-family: "Raleway";
+            font-weight: bold;
+        }
+        .form label {
+            font-family: "Raleway";
+        }
+        .form input {
+            width: 1000px;
+        }
+        .form textarea {
+            height: 100px;
+            width: 1000px;
         }
         .foot {
             grid-area: footer;
@@ -167,9 +211,76 @@
         <div class="urr">
             <img src="spicy-tuna-onigiri-cut-in-half-thumbnail.jpg">
         </div>
+        <div class="tab">
+            <table>
+                <tr class="topic">
+                    <td>Flavour Type</td>
+                    <td>Rating</td>
+                </tr>
+                <tr>
+                    <td>Umeboshi</td>
+                    <td>4.6 / 5</td>
+                </tr>
+                <tr>
+                    <td>Sake</td>
+                    <td>4.2 / 5</td>
+                </tr>
+                <tr>
+                    <td>Tuna Mayo</td>
+                    <td>4.7 / 5</td>
+                </tr>
+                <tr>
+                    <td>Tarako</td>
+                    <td>4.5 / 5</td>
+                </tr>
+                <tr>
+                    <td>Tenmusu</td>
+                    <td>4.3 / 5</td>
+                </tr>
+                <tr>
+                    <td  colspan="3" class="topic">Visit us to know more!</td>
+                </tr>
+            </table>
+        </div>
+        <div class="form">
+            <label class="formtitle">Let us know what you think!</label>
+            <form>
+                <label><br>Feedback</label> 
+                <br>
+                <textarea type="text" id="Feedback" placeholder="Please give us your feedback..."></textarea>
+                <br>
+                <label>Email Address</label> 
+                <br>
+                <input type="email" id="Mail"> 
+                <br>
+                <label>Name</label> 
+                <br>
+                <input type="text" id="Name"> 
+                <br><br>
+                <button type="button" onclick="register()">Send</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
         <footer class="foot">
             
         </footer>
     </div>
+    <script>
+        function register() {
+            const Feedback = document.getElementById("Feedback").value
+            const Mail = document.getElementById("Mail").value
+            const Name = document.getElementById("Name").value
+            const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+            if (Feedback == "" || Mail == "" || Name == "") {
+                alert("You must complete the form!")
+            }
+            else if (regex.test(Mail) == false) {
+                alert("Please enter a valid email address")
+            }
+            else {
+                alert("Data has been registered!\nThank you for your feedback!")
+            }
+        }
+    </script>
 </body>
 </html>

@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sushi</title>
+    <link rel="icon" href="icon_logo_2.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <style>
         body {
             width: 1300px;
@@ -131,23 +132,26 @@
         }
         .tab tr:nth-child(even) {
             background-color: rgb(255, 153, 102);
-            /*
-            border-right: 1px black solid;
-            border-left: 1px black solid;
-            */
         }
-        /*
         .tab td {
-            border-bottom: 1px black solid;
+            font-family: "Raleway";
         }
-        */
+        .topic {
+            font-weight: bold;
+        }
         .form {
             grid-area: form;
             background-color: #F0F0F0;
             padding-left: 100px;
         }
-        .form h6 {
-            font-size: 20px;
+        .formtitle {
+            padding-bottom: 100px;
+            font-size: 30px;
+            font-family: "Raleway";
+            font-weight: bold;
+        }
+        .form label {
+            font-family: "Raleway";
         }
         .form input {
             width: 1000px;
@@ -210,51 +214,45 @@
         </div>
         <div class="tab">
             <table>
-                <tr>
+                <tr class="topic">
                     <td>Dish Name</td>
                     <td>Fish Type</td>
-                    <td>Origin</td>
                     <td>Rating</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>Hosomaki</td>
+                    <td>Salmon</td>
+                    <td>4.8 / 5</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>Nigiri</td>
+                    <td>Shrimp</td>
+                    <td>4.1 / 5</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>Ozhisushi</td>
+                    <td>Tuna Aburi</td>
+                    <td>4.3 / 5</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>Ikura</td>
+                    <td>Salmon Roe</td>
+                    <td>4.6 / 5</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>Temaki</td>
+                    <td>Cucumber, Crabstick</td>
+                    <td>4.2 / 5</td>
                 </tr>
                 <tr>
-                    <td  colspan="4">Visit us to know more!</td>
+                    <td  colspan="3" class="topic">Visit us to know more!</td>
                 </tr>
             </table>
         </div>
         <div class="form">
-            <h6>Let us know what you think!</h6>
+            <label class="formtitle">Let us know what you think!</label>
             <form>
-                <label>Feedback</label> 
+                <label><br>Feedback</label> 
                 <br>
                 <textarea type="text" id="Feedback" placeholder="Please give us your feedback..."></textarea>
                 <br>
