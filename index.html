@@ -24,6 +24,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
         }
         .vertical-rl{
             writing-mode: vertical-lr;
@@ -32,12 +36,16 @@
         .main {
             display: block;
             padding: 15px;
+            max-width: 80%;
             background-color: #c80000;
             border-left: 5px solid rgb(0, 0, 0);
             border-bottom: 5px solid rgb(0, 0, 0);
             border-right: 1px solid rgb(0, 0, 0);
             border-top: 1px solid rgb(0, 0, 0);
             border-radius: 10px;
+        }
+        .logo {
+            padding: 15px;
         }
         h1 {
             color: #fec95d;
@@ -51,7 +59,7 @@
             justify-content: center;
             align-items: center;
             text-align: left;
-            width: 80%;
+            max-width: 80%;
             margin-left: auto;
             margin-right: auto;
             border-collapse: collapse;
@@ -71,6 +79,9 @@
             justify-content: center;
             align-items: center;
             padding-top: 32px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
         }
         .menutitle td {
             display: block;
@@ -126,6 +137,11 @@
             padding-top: 25px;
             padding-bottom: 25px;
         }
+        .text_detail {
+            display: block;
+            max-width: 30%;
+            margin: 0 5%;
+        }
         body img {
             border-radius: 10px;
         }
@@ -155,16 +171,14 @@
 <body>
     <section class="dadish">
         <div class="top">
-            <table class="restoname">
-                <tr class="main">
-                    <td><h1>Shoku Side</h1></td>
-                </tr>
-            </table>
+            <div class="main">
+                <h1>Shoku Side</h1>
+            </div>
             <div class="logo">
-                <img src="icon_logo_2.png" alt="Logo">
+                <img src="icon_logo_3.png" alt="Logo">
             </div>
         </div>
-        <div class="Arr" border="5">
+        <table class="Arr" border="5">
             <tr>
                 <td>
                     <h4>Shoku Side is a Japenese street food stall located in the heart of Yorksville.<br>
@@ -177,26 +191,26 @@
                     <img src="Food Stall 2.jpg" alt="Our Location" width="400px">
                 </td>
             </tr>
-        </div>
+        </table>
         <table class="menutitle">
             <tr><td><h2>What We Serve</h2></td></tr>
         </table>
         <table class="list">
             <tr class="trborder">
                 <td class="tdspace" width="30%"><img src="how-to-draw-sushi-step-6.jpg" alt="Sushi" class="tableimg"></td>
-                <td class="tdspace"><a href="dish1_1.html" style="color:red">SUSHI</a> | Click on "SUSHI" to learn more</td>
+                <div class="text_detail"><td class="tdspace"><a href="dish1_1.html" style="color:red">SUSHI</a> | Click on "SUSHI" to learn more</td></div>
             </tr>
         </table>
         <table class="list">
             <tr class="trborder">
-                <td class="tdspace"><a href="dish2_2.html" style="color:red">ONIGIRI</a> | Click on "ONIGIRI" to learn more</td>
+                <div class="text_detail"><td class="tdspace"><a href="dish2_2.html" style="color:red">ONIGIRI</a> | Click on "ONIGIRI" to learn more</td></div>
                 <td class="tdspace" width="25%"><img src="onigiri.jpg" alt="Onigiri" class="tableimg"></td>
             </tr>
         </table>
         <table class="list">
             <tr class="trborder">
                 <td class="tdspace" width="30%"><img src="images (1).jpg" alt="Omurice" class="tableimg"></td>
-                <td class="tdspace"><a href="dish3_3.html" style="color:red">OMURICE</a> | Click on "OMURICE" to learn more</td>
+                <div class="text_detail"><td class="tdspace"><a href="dish3_3.html" style="color:red">OMURICE</a> | Click on "OMURICE" to learn more</td></div>
             </tr>
         </table>
         <table class="foot">   
