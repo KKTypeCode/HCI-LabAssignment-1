@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi</title>
+    <link rel="icon" href="icon_logo_2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            max-width: 1300px;
+            width: 100%;
+            margin: auto;
+            background-image: url(vector-japanese-floral-background_f1Ce4m8__thumb.jpg);
+        }
+        .contain {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .contain img {
+            margin: auto;
+            height: 100%;
+            max-height: 50px;
+        }
+        .nav {
+            flex: 30%;
+            margin-top: 5px;
+            background-color: beige;
+            height: 50px;
+            border-radius: 10px 0px 0px 0px;
+        }
+        .navbar {
+            flex: 70%;
+            margin-top: 5px;
+            background-color: beige;
+            overflow: hidden;
+            height: 50px;
+            border-radius: 0px 10px 0px 0px;
+        }
+        .navbar a {
+            float: right;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin: auto;
+            padding: 10px 25px;
+        }
+        .navbar a:hover {
+            background-color: bisque;
+        }
+        .create {
+            display: flex;
+            flex-direction: row;
+        }
+        .create1 {
+            display: flex;
+            flex-direction: row;
+        }
+        .harr {
+            flex: 50%;
+            background-color: #F0F0F0;
+            padding: 10px;
+        }
+        .harr img {
+            border: 3px solid #e30f0f;  
+            border-radius: 12px;    
+            max-width: 600px;
+            max-height: 450px;
+            height: 100%;
+            width: 100%;
+            margin: 10px;
+        }
+        .horr {
+            flex: 50%;
+            background-color: #F0F0F0;
+            padding: 10px;
+        }
+        .horr h2 {
+            font-size: 7vw;
+        }
+        .horr h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .ar {
+            flex: 100%;
+            background-color: #F0F0F0;
+            padding: 0px 30px 30px 50px;
+        }
+        .ar h6 {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .or {
+            flex: 50%;
+            background-color: #F0F0F0;
+            padding: 10px;
+            height: 450px;
+        }
+        .or img {
+            border: 3px solid #e30f0f;  
+            border-radius: 12px;    
+            max-width: 650px;
+            max-height: 400px;
+            height: 100%;
+            width: 100%;
+        }
+        .tab {
+            display: flex;
+            justify-content: center;
+            background-color: #F0F0F0;
+            flex: 100%;
+            height: 200px;
+            padding-bottom: 10px;
+        }
+        .tab table {
+            text-align: center;
+            border-collapse: collapse;
+            width: 70%;
+        }
+        .tab tr:nth-child(even) {
+            background-color: rgb(255, 153, 102);
+        }
+        .tab td {
+            font-family: "Raleway";
+        }
+        .topic {
+            font-weight: bold;
+        }
+        .form {
+            background-color: #F0F0F0;
+            flex: 100%;
+            padding: 50px;
+        }
+        .formtitle {
+            padding-bottom: 100px;
+            font-size: 3vw;
+            font-family: "Raleway";
+            font-weight: bold;
+        }
+        .form label {
+            font-family: "Raleway";
+        }
+        .form input {
+            width: 100%;
+            max-width: 1000px;
+        }
+        .form textarea {
+            height: 100%;
+            max-height: 100px;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .foot {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            flex: 100%;
+            border-radius: 0px 0px 10px 10px;
+            background-color: rgb(255, 225, 127);
+        }
+        @media screen and (max-width: 1300px) {
+        .create {
+            width: 100%;
+            flex-direction: column;
+            }
+        .create1 {
+            width: 100%;
+            flex-direction: column;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="nav">
+            <a href='index.html'><img src="icon_logo_2.png"></a>
+        </div>
+        <div class="navbar">
+            <a href="dish3_3.html">Omurice</a>
+            <a href="dish2_2.html">Onigiri</a>
+        </div>
+    <div class="create">
+        <div class="harr">
+            <img src="nigiri.jpeg">
+        </div>
+        <div class="horr">
+            <h2>Sushi</h2>
+            <h6>We serve different kinds of sushi rolls, such as hosomaki rolls.
+                We also serve the traditional style of sushi, called nigiri.
+                We can serve sushi in different shapes too, like our oshizushi.
+                You can choose your own preference of fillings, from vegan options
+                like cucumber and avocado, to meaty options, such as salmon and tuna!</h6>
+        </div>
+    </div>
+        <div class="ar">
+            <h6>Sushi is one of Japan's national dish. It's easy, cheap, delicious, 
+                and are artfully prepared by our master chefs. 
+                Ever since the boom of Japanese meals around the world, sushi has never 
+                stopped to become everyone's favourite comfort 'snack'. 
+                Pair your choice of sushi with our signature soy sauce or fresh wasabi
+                to experience a new light and enjoyable flavour! 
+            <br><br>
+            Our seaweeds and rice are 100% produced and harvested by our local farmers!
+            <br>
+            Come try our secret additive-free three-year soy sauce!
+            <br><br>
+            What are you waiting for?
+            <br>
+            Come give us a visit at our location today!
+            </h6>
+        </div>
+
+    <div class="create1">
+        <div class="or">
+            <img src="hosomaki.jpeg">
+        </div>
+        <div class="or">
+            <img src="nigiri.jpeg">
+        </div>
+    </div>
+
+        <div class="tab">
+            <table>
+                <tr class="topic">
+                    <td>Dish Name</td>
+                    <td>Fish Type</td>
+                    <td>Rating</td>
+                </tr>
+                <tr>
+                    <td>Hosomaki</td>
+                    <td>Salmon</td>
+                    <td>4.8 / 5</td>
+                </tr>
+                <tr>
+                    <td>Nigiri</td>
+                    <td>Shrimp</td>
+                    <td>4.1 / 5</td>
+                </tr>
+                <tr>
+                    <td>Ozhisushi</td>
+                    <td>Tuna Aburi</td>
+                    <td>4.3 / 5</td>
+                </tr>
+                <tr>
+                    <td>Ikura</td>
+                    <td>Salmon Roe</td>
+                    <td>4.6 / 5</td>
+                </tr>
+                <tr>
+                    <td>Temaki</td>
+                    <td>Cucumber, Crabstick</td>
+                    <td>4.2 / 5</td>
+                </tr>
+                <tr>
+                    <td  colspan="3" class="topic">Visit us to know more!</td>
+                </tr>
+            </table>
+        </div>
+        <div class="form">
+            <label class="formtitle">Let us know what you think!</label>
+            <form>
+                <label><br>Feedback</label> 
+                <br>
+                <textarea type="text" id="Feedback" placeholder="Please give us your feedback..."></textarea>
+                <br>
+                <label>Email Address</label> 
+                <br>
+                <input type="email" id="Mail"> 
+                <br>
+                <label>Name</label> 
+                <br>
+                <input type="text" id="Name"> 
+                <br><br>
+                <button type="button" onclick="register()">Send</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
+        <footer class="foot">
+            <p>Follow us on our Socials!</p>
+        </footer>
+    </div>
+    <script>
+        function register() {
+            const Feedback = document.getElementById("Feedback").value
+            const Mail = document.getElementById("Mail").value
+            const Name = document.getElementById("Name").value
+            const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+            if (Feedback == "" || Mail == "" || Name == "") {
+                alert("You must complete the form!")
+            }
+            else if (regex.test(Mail) == false) {
+                alert("Please enter a valid email address")
+            }
+            else {
+                alert("Data has been registered!\nThank you for your feedback!")
+            }
+        }
+    </script>
+</body>
+</html>
